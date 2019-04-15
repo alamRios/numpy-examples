@@ -22,3 +22,10 @@ pyarray_1 = [15,5,3,10,0,6]
 nparray = np.array(pyarray_1)
 print(nparray.reshape(2,3))
 print(nparray.shape)
+
+slist = list('AABCAAADA')
+n = 3
+start = 0
+for stop in list(range(len(slist)+n)[n::n]):
+    print(start,stop,slist[start:stop])
+    start = stop
